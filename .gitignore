@@ -1,3 +1,4 @@
 *.gem
-Gemfile.lock
 .bundle/
+*.sqlite3
+*.log

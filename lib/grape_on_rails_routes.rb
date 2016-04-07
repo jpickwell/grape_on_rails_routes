@@ -1,9 +1,6 @@
-
 require 'grape_on_rails_routes/rails_ext'
-module GrapeOnRailsRoutes
 
-end
-
+module GrapeOnRailsRoutes; end
 
 class GrapeRailsRoutes < Rails::Railtie
   rake_tasks do
