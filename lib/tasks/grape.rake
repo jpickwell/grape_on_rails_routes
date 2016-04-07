@@ -5,7 +5,7 @@ namespace :grape do
     routes = grape_klasses.flat_map(&:routes).uniq { |r| r.path + r.request_method.to_s }
     version_width, verb_width, pattern_width, description_width = widths(routes)
 
-    headers = %w(Version Verb 'URI Pattern' Description)
+    headers = %w(Version Verb URI\ Pattern Description)
     version_width = headers[0].length if headers[0].length > version_width
     verb_width = headers[1].length if headers[1].length > verb_width
     pattern_width = headers[2].length if headers[2].length > pattern_width
